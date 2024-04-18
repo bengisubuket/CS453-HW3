@@ -1,7 +1,7 @@
 import requests
 
-# Introducing a syntax error to demonstrate the test failure
-def getDefinition(word: str) -> str
+
+def getDefinition(word: str) -> str:
     """Returns the first definition of the given word.
     Returns None if the word does not exist.
     """
