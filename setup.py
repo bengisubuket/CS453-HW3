@@ -9,6 +9,8 @@ setup(
     install_requires=[
         "requests>=2.23.0",
     ],
-    python_requires=">=3.8",
+    python_requires=">=3.8", 
+    # Introduce an invalid setup argument
+    non_existent_argument="This will cause an error",
 
 )
