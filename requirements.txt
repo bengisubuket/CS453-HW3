@@ -1,3 +1,1 @@
 requests
-# This package does not exist and will cause pip install to fail
-non-existent-package==0.0.1
