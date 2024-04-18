@@ -25,6 +25,7 @@ jobs:
         run: python -m build
 
   test:
+    needs: build  # This job needs the build job to succeed before running
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -43,6 +44,7 @@ jobs:
         run: pytest
 
   deploy:
+    needs: test  # This job needs the test job to succeed before running
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
