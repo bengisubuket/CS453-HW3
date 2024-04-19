@@ -1,8 +1,7 @@
 from setuptools import setup
 
 setup(
-    # TODO: Write a globally unique name which will be listed on PyPI
-    name="very-simple-dictionary",
+    name="very-simple-dictionary-bengisubuket",
     author="bengisubuket", 
     version="2.0.0",
     packages=["dictionary"],
